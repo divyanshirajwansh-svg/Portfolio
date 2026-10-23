@@ -1,6 +1,6 @@
 # Code Meets Creator — Personal Portfolio
 
-A personal portfolio website for **Divyanshi RajWansh**, bringing together software development, computer science, and content creation in one place.
+A personal portfolio website for **Divyanshi Rajwansh**, bringing together software development, computer science, and content creation in one place.
 
 The site presents an introduction, skills, project showcase, creator assets, and a contact form in a responsive interface with dark/light theme support.
 
