@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Content creator assets and skill showcase by Divyanshi Rajvansh." />
+    <title>Creator Assets — Divyanshi Rajvansh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("portfolio-theme");
+          var theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          /* localStorage can be blocked; CSS default remains dark */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="logo" href="index.html" aria-label="Home, Code Creator">
+          <code class="logo-mark">&lt;Code/&gt;&lt;/Creator&gt;</code>
+        </a>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch to light theme"
+          aria-pressed="true"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z" />
+          </svg>
+        </button>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-panel" id="primary-nav" data-nav-panel>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="assets.html" aria-current="page">Creator Assets</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="site-main container">
+      <header class="section-header">
+        <p class="section-kicker">CREATOR</p>
+        <h1>Content Creator &amp; Skill Assets</h1>
+        <p class="section-lead">
+          Boards, edit frames, brand pieces, and the tools behind them. These cards use local placeholders until finished files are exported.
+        </p>
+      </header>
+
+      <section class="section" data-reveal aria-labelledby="showcase-heading">
+        <h2 id="showcase-heading" class="visually-hidden">Asset showcase</h2>
+        <div class="asset-grid">
+          <article class="asset-card glass">
+            <img src="images/asset-design.svg" alt="Stylized design board with layout blocks and color circles" width="800" height="500" />
+            <div class="asset-card-body">
+              <p class="badge badge-coral">Design</p>
+              <h3>Layout &amp; UI boards</h3>
+              <p>Frame studies for thumbnails, cards, and page sections before they become code.</p>
+            </div>
+          </article>
+          <article class="asset-card glass">
+            <img src="images/asset-video.svg" alt="Video editor style frame with play button and timeline" width="800" height="500" />
+            <div class="asset-card-body">
+              <p class="badge badge-yellow">Video</p>
+              <h3>Edit-style frames</h3>
+              <p>Timeline-inspired stills that stand in for cuts, lower thirds, and pacing notes.</p>
+            </div>
+          </article>
+          <article class="asset-card glass">
+            <img src="images/asset-brand.svg" alt="Brand kit with palette swatches and sample buttons" width="800" height="500" />
+            <div class="asset-card-body">
+              <p class="badge">Brand</p>
+              <h3>Brand kit</h3>
+              <p>Cyan, violet, coral, and yellow used as a shared language across TECH and CREATOR work.</p>
+            </div>
+          </article>
+          <article class="asset-card glass">
+            <img src="images/asset-writing.svg" alt="Article layout placeholder with headline and body lines" width="800" height="500" />
+            <div class="asset-card-body">
+              <p class="badge badge-coral">Writing</p>
+              <h3>Featured writing / media</h3>
+              <p>Scripts, captions, and post drafts that sit next to the builds they describe.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" data-reveal aria-labelledby="tools-heading">
+        <header class="section-header">
+          <h2 id="tools-heading">Tools used</h2>
+          <p class="section-lead">Everyday creator stack for design, editing, streaming, and notes.</p>
+        </header>
+        <div class="tool-grid">
+          <article class="asset-card glass">
+            <img src="images/tool-premiere.svg" alt="Premiere tool tile" width="800" height="500" />
+            <div class="asset-card-body">
+              <h3>Premiere</h3>
+              <p>Cuts, color, and export for short-form explainers.</p>
+            </div>
+          </article>
+          <article class="asset-card glass">
+            <img src="images/tool-figma.svg" alt="Figma tool tile" width="800" height="500" />
+            <div class="asset-card-body">
+              <h3>Figma</h3>
+              <p>Boards, components, and brand spacing before development.</p>
+            </div>
+          </article>
+          <article class="asset-card glass">
+            <img src="images/tool-obs.svg" alt="OBS tool tile" width="800" height="500" />
+            <div class="asset-card-body">
+              <h3>OBS</h3>
+              <p>Scene layouts and recordings for walkthroughs.</p>
+            </div>
+          </article>
+          <article class="asset-card glass">
+            <img src="images/tool-notion.svg" alt="Notion tool tile" width="800" height="500" />
+            <div class="asset-card-body">
+              <h3>Notion</h3>
+              <p>Shot lists, scripts, and publish checklists in one place.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="synergy-banner glass" data-reveal aria-labelledby="synergy-heading">
+        <p class="section-kicker">TECH meets CREATOR</p>
+        <h2 id="synergy-heading">Automation that respects the edit</h2>
+        <p>
+          Scripts rename exports, templates lock the brand kit, and checklists in Notion keep Premiere and OBS from drifting.
+          The same habits I use to clean Python — small functions, clear names, repeatable steps — keep the content workflow calm when a deadline shows up.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <p class="footer-brand">&lt;Code/&gt;&lt;/Creator&gt;</p>
+        <p class="footer-meta">© 2026 Divyanshi Rajvansh · TECH / CREATOR</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="assets.html">Creator Assets</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/theme.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/chat.js" defer></script>
+  </body>
+</html>
